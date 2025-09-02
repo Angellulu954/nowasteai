@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="card">
+    <h2>Your Favorites</h2>
+    {% if favorites %}
+      <ul>
+        {% for f in favorites %}
+          <li>{{ f['recipe_name'] }} <small class="muted">saved {{ f['saved_at'] }}</small></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <small class="muted">No favorites yet.</small>
+    {% endif %}
+  </div>
+{% endblock %}

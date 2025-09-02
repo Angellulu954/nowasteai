@@ -1,0 +1,350 @@
+[
+  {
+    "name": "Tomato Rice Bowl",
+    "ingredients": [
+      "rice",
+      "tomato",
+      "onion",
+      "garlic",
+      "oil",
+      "salt"
+    ],
+    "instructions": "Cook rice. Saute onion and garlic in oil, add chopped tomato, salt, and mix with rice.",
+    "nutrition": {
+      "calories": 420,
+      "protein_g": 8,
+      "fat_g": 10,
+      "carbs_g": 75
+    },
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "image": "https://images.unsplash.com/photo-1604908177677-3f04b3b6b8d8"
+  },
+  {
+    "name": "Veggie Omelette",
+    "ingredients": [
+      "egg",
+      "onion",
+      "tomato",
+      "salt",
+      "oil"
+    ],
+    "instructions": "Beat eggs, add chopped onions and tomatoes, season, cook on oiled pan.",
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 18,
+      "fat_g": 20,
+      "carbs_g": 4
+    },
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "image": "https://images.unsplash.com/photo-1572441710260-5d3b2d1c3a3b"
+  },
+  {
+    "name": "Garlic Pasta",
+    "ingredients": [
+      "pasta",
+      "garlic",
+      "oil",
+      "salt"
+    ],
+    "instructions": "Boil pasta. Saute garlic in oil, toss with pasta and salt.",
+    "nutrition": {
+      "calories": 520,
+      "protein_g": 12,
+      "fat_g": 14,
+      "carbs_g": 85
+    },
+    "tags": [
+      "quick"
+    ],
+    "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468"
+  },
+  {
+    "name": "Fried Rice",
+    "ingredients": [
+      "rice",
+      "egg",
+      "carrot",
+      "peas",
+      "onion",
+      "oil",
+      "salt",
+      "soy sauce"
+    ],
+    "instructions": "Stir-fry veggies, add rice and egg, season with soy sauce.",
+    "nutrition": {
+      "calories": 580,
+      "protein_g": 16,
+      "fat_g": 18,
+      "carbs_g": 90
+    },
+    "tags": [
+      "one-pan"
+    ],
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+  },
+  {
+    "name": "Chicken Curry",
+    "ingredients": [
+      "chicken",
+      "onion",
+      "garlic",
+      "ginger",
+      "tomato",
+      "oil",
+      "salt",
+      "curry powder"
+    ],
+    "instructions": "Saute onion, garlic, ginger; add chicken, tomatoes, curry powder; simmer until cooked.",
+    "nutrition": {
+      "calories": 640,
+      "protein_g": 42,
+      "fat_g": 28,
+      "carbs_g": 40
+    },
+    "tags": [
+      "dinner",
+      "protein"
+    ],
+    "image": "https://images.unsplash.com/photo-1604909052854-2f4d0b0f4f3a"
+  },
+  {
+    "name": "Chapati Wrap",
+    "ingredients": [
+      "flour",
+      "water",
+      "salt",
+      "oil",
+      "onion",
+      "tomato"
+    ],
+    "instructions": "Make chapati dough with flour, water, salt, oil; cook; fill with onion and tomato.",
+    "nutrition": {
+      "calories": 450,
+      "protein_g": 10,
+      "fat_g": 12,
+      "carbs_g": 75
+    },
+    "tags": [
+      "street-food"
+    ],
+    "image": "https://images.unsplash.com/photo-1604908177526-8e4f0a9b2f1a"
+  },
+  {
+    "name": "Beans Stew",
+    "ingredients": [
+      "beans",
+      "onion",
+      "garlic",
+      "tomato",
+      "salt",
+      "oil"
+    ],
+    "instructions": "Cook beans; saute aromatics; add beans and simmer.",
+    "nutrition": {
+      "calories": 520,
+      "protein_g": 24,
+      "fat_g": 8,
+      "carbs_g": 88
+    },
+    "tags": [
+      "vegan",
+      "fiber"
+    ],
+    "image": "https://images.unsplash.com/photo-1543352634-5b6b1e1d6d1d"
+  },
+  {
+    "name": "Lentil Soup",
+    "ingredients": [
+      "lentils",
+      "onion",
+      "garlic",
+      "carrot",
+      "salt",
+      "oil",
+      "water"
+    ],
+    "instructions": "Saute aromatics; add lentils, carrot, water; simmer until tender.",
+    "nutrition": {
+      "calories": 380,
+      "protein_g": 20,
+      "fat_g": 6,
+      "carbs_g": 60
+    },
+    "tags": [
+      "vegan",
+      "soup"
+    ],
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947"
+  },
+  {
+    "name": "Banana Pancakes",
+    "ingredients": [
+      "banana",
+      "egg",
+      "flour",
+      "milk",
+      "oil",
+      "salt"
+    ],
+    "instructions": "Mash banana, add egg, flour, milk; cook on oiled pan.",
+    "nutrition": {
+      "calories": 520,
+      "protein_g": 14,
+      "fat_g": 16,
+      "carbs_g": 80
+    },
+    "tags": [
+      "breakfast",
+      "sweet"
+    ],
+    "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e"
+  },
+  {
+    "name": "Tomato Soup",
+    "ingredients": [
+      "tomato",
+      "onion",
+      "garlic",
+      "oil",
+      "salt",
+      "water"
+    ],
+    "instructions": "Saute aromatics; add tomatoes and water; simmer and blend.",
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 5,
+      "fat_g": 8,
+      "carbs_g": 30
+    },
+    "tags": [
+      "soup",
+      "light"
+    ],
+    "image": "https://images.unsplash.com/photo-1544025162-6c8b8f0f9d2b"
+  },
+  {
+    "name": "Cabbage Stir-fry",
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "onion",
+      "garlic",
+      "oil",
+      "salt",
+      "soy sauce"
+    ],
+    "instructions": "Stir-fry veggies on high heat; season with salt and soy sauce.",
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 6,
+      "fat_g": 10,
+      "carbs_g": 35
+    },
+    "tags": [
+      "vegan",
+      "quick"
+    ],
+    "image": "https://images.unsplash.com/photo-1543352634-6b8b1e1d6d1d"
+  },
+  {
+    "name": "Ugali with Sukuma",
+    "ingredients": [
+      "maize flour",
+      "water",
+      "salt",
+      "kale",
+      "onion",
+      "tomato",
+      "oil"
+    ],
+    "instructions": "Cook ugali; saute kale with onions and tomatoes.",
+    "nutrition": {
+      "calories": 600,
+      "protein_g": 12,
+      "fat_g": 14,
+      "carbs_g": 110
+    },
+    "tags": [
+      "east-africa",
+      "staple"
+    ],
+    "image": "https://images.unsplash.com/photo-1544025162-7b8b8f0f9d2b"
+  },
+  {
+    "name": "Rice and Beans",
+    "ingredients": [
+      "rice",
+      "beans",
+      "onion",
+      "garlic",
+      "tomato",
+      "salt",
+      "oil"
+    ],
+    "instructions": "Cook rice and beans; combine with sauteed aromatics.",
+    "nutrition": {
+      "calories": 650,
+      "protein_g": 22,
+      "fat_g": 12,
+      "carbs_g": 110
+    },
+    "tags": [
+      "vegan",
+      "complete-protein"
+    ],
+    "image": "https://images.unsplash.com/photo-1604908177600-3f04b3b6b8d9"
+  },
+  {
+    "name": "Peanut Stew",
+    "ingredients": [
+      "peanut butter",
+      "onion",
+      "garlic",
+      "tomato",
+      "spinach",
+      "water",
+      "salt"
+    ],
+    "instructions": "Simmer peanut butter with tomatoes, aromatics, spinach; thin with water.",
+    "nutrition": {
+      "calories": 700,
+      "protein_g": 25,
+      "fat_g": 40,
+      "carbs_g": 60
+    },
+    "tags": [
+      "rich",
+      "comfort"
+    ],
+    "image": "https://images.unsplash.com/photo-1544025162-8c8b8f0f9d2b"
+  },
+  {
+    "name": "Simple Salad",
+    "ingredients": [
+      "lettuce",
+      "tomato",
+      "cucumber",
+      "onion",
+      "oil",
+      "salt"
+    ],
+    "instructions": "Chop vegetables; dress with oil and salt.",
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 4,
+      "fat_g": 8,
+      "carbs_g": 24
+    },
+    "tags": [
+      "light",
+      "fresh"
+    ],
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc6cf3"
+  }
+]

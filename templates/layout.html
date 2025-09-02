@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoWaste AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="{{ url_for('index') }}"><h2>NoWaste AI</h2></a>
+      <div>
+        {% if session.get('user_id') %}
+          <span>Hi, {{ session.get('username') }}!</span>
+          <a class="btn" href="{{ url_for('dashboard') }}">Dashboard</a>
+          <a class="btn" href="{{ url_for('stats') }}">Stats</a>
+          <a class="btn" href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+          <a class="btn" href="{{ url_for('login') }}">Login</a>
+          <a class="btn" href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+      </div>
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          <div class="flash {{ category }}">{{ msg }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+    <footer><small class="muted">Built with Python (Flask) + HTML/CSS + SQLite • NoWaste AI</small></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="card">
+    <h2>Your Impact</h2>
+    <p><strong>Total estimated food saved:</strong> {{ total_saved }} grams</p>
+    <p><strong>Recipes cooked from pantry:</strong> {{ cooked_count }}</p>
+    <p class="muted">Tip: Click "Cooked this" on a recipe after making it to record your impact.</p>
+  </div>
+{% endblock %}

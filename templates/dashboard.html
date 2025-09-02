@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Your Pantry</h3>
+      <form action="{{ url_for('pantry_add') }}" method="POST" style="margin-bottom:10px;">
+        <input class="input" name="item" placeholder="e.g., rice">
+        <div style="margin-top:8px;"><button class="btn" type="submit">Add</button></div>
+      </form>
+      {% if pantry %}
+        <ul>
+          {% for p in pantry %}
+            <li>
+              {{ p['name'] }}
+              <form style="display:inline" action="{{ url_for('pantry_remove', item_id=p['id']) }}" method="POST">
+                <button class="btn" style="margin-left:8px;">Remove</button>
+              </form>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <small class="muted">No items yet.</small>
+      {% endif %}
+      <form action="{{ url_for('suggest_from_pantry') }}" method="POST" style="margin-top:10px;">
+        <button class="btn" type="submit">Suggest from Pantry</button>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Favorites</h3>
+      {% if favorites %}
+        <ul>
+          {% for f in favorites %}
+            <li>{{ f['recipe_name'] }} <span class="badge">saved</span></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <small class="muted">Save recipes to see them here.</small>
+      {% endif %}
+    </div>
+    <div class="card">
+      <h3>How it works</h3>
+      <p>We match your ingredients to recipes and show what you're missing so you can minimize waste.</p>
+      <p><span class="badge">Local</span><span class="badge">Offline</span><span class="badge">Fast</span></p>
+    </div>
+  </div>
+{% endblock %}

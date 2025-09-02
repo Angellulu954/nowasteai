@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="card">
+    <h1>Turn leftovers into meals</h1>
+    <p>Type what you have. We'll suggest recipes so nothing goes to waste.</p>
+    <form action="{{ url_for('suggest') }}" method="POST">
+      <label>Ingredients (comma separated)</label>
+      <input class="input" type="text" name="ingredients" placeholder="rice, tomato, onion, egg">
+      <div style="margin-top:10px;">
+        <button class="btn" type="submit">Suggest Recipes</button>
+      </div>
+    </form>
+    <p><small class="muted">Tip: You can also create an account and save your pantry.</small></p>
+  </div>
+{% endblock %}

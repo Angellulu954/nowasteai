@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="card">
+    <h2>Suggested Recipes</h2>
+    <small class="muted">Based on: {{ ingredients | join(', ') }}</small>
+  </div>
+  <div class="grid grid-3">
+    {% for r in recipes %}
+      <div class="card">
+        <img src="{{ r.image }}" alt="{{ r.name }}" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:8px;">
+        <h3>{{ r.name }}</h3>
+        <p><strong>You have:</strong> {{ r.have | join(', ') if r.have else '—' }}</p>
+        <p><strong>Missing:</strong> {{ r.missing | join(', ') if r.missing else 'None 🎉' }}</p>
+        <p><strong>Nutrition (approx):</strong> {{ r.nutrition.calories }} kcal</p>
+        <details>
+          <summary>Instructions</summary>
+          <p>{{ r.instructions }}</p>
+        </details>
+        {% if show_save %}
+        <form method="POST" action="{{ url_for('favorite') }}" style="margin-top:10px;display:inline-block;">
+          <input type="hidden" name="recipe_name" value="{{ r.name }}">
+          <button class="btn" type="submit">Save to Favorites</button>
+        </form>
+        <form method="POST" action="{{ url_for('cooked') }}" style="margin-top:10px;display:inline-block;margin-left:8px;">
+          <input type="hidden" name="recipe_name" value="{{ r.name }}">
+          <button class="btn" type="submit">Cooked this (Save Waste)</button>
+        </form>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
