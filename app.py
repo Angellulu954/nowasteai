@@ -245,5 +245,4 @@ def stats():
     cooked_count = rows['cooked_count'] or 0
     return render_template('stats.html', total_saved=total, cooked_count=cooked_count)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
